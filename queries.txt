@@ -2,17 +2,23 @@ Consultas
 
 
 1.- Promedio de CPU usado por contenedor
+
       rate(container_cpu_usage_seconds_total{instance="localhost:8080"}[5m])	
 
 2.- Memoria usada en bytes
+
       container_memory_usage_bytes{instance="localhost:8080"}	
 
 3.- Uso de filesystem en bytes
+
       container_fs_usage_bytes{instance="localhost:8080"}	
 
 4.- Latencia total del chequeo
+
       probe_duration_seconds{instance="mi_ec2_app"}	
 
-5.- C¢digo HTTP de respuesta
+5.- Codigo HTTP de respuesta
+
       probe_http_status_code{instance="mi_ec2_app"}	
+
 
